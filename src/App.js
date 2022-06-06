@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
 import Patients from './components/Patients';
 import Pets from './components/Pets';
+import New from './components/New';
 class App extends React.Component {
   constructor() {
     super();
@@ -21,9 +22,11 @@ class App extends React.Component {
         <div className="nav">
           <Link to="/">Patients</Link>
           <Link to="/pets">Pets</Link>
+          <Link to="/new">New</Link>
         </div>
         <Routes>
           <Route path="/" element={<Patients patient_list={this.state.myPatients} />} />
+          <Route path="/new" element={<New />} />
           <Route path="/pets" element={<Pets add_patient={this.addPatient} />} />
         </Routes>
       </div>

@@ -5,9 +5,10 @@ This app uses [this api](https://github.com/joinpursuit/resource-veterinarian-ap
 
 # Requirements
 
-- User can see current patients by going to the home page (`/`)
-- User can view all pets by going to `/pets`
-- User can add a new patient by clicking a button next to the pet.
+x User can see current patients by going to the home page (`/`)
+x User can view all pets by going to `/pets`
+x User can add a new patient by clicking a button next to the pet.
+
 - User can add a new pet by going to `/pets/new`
 - User can see pet details by going to `/pet/:id`
 

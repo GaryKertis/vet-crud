@@ -9,7 +9,7 @@ class Pets extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/api/pets').then((result) => {
+    axios.get('http://localhost:3001/api/pets').then((result) => {
       this.setState({ petList: result.data });
     });
   }
